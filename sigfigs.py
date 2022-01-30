@@ -19,7 +19,7 @@ def format(value, prec, unit) :
     frac = sigfigs - whole
     if whole < 0 : whole = 0
     fmt = '%%%d.%df %s%s'%(whole,frac,si_prefixes[3*log1000_value],unit)
-    print(i_value,i_prec,sigfigs,log1000_value,log1000_rem,fmt)
+    #print(i_value,i_prec,sigfigs,log1000_value,log1000_rem,fmt)
     return fmt%(value/numpy.power(1000.,log1000_value))
 
 if '__main__' == __name__ :
